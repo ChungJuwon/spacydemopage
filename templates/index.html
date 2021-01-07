@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+    href="{{ url_for('static', filename='calculator.css') }}"/>
+</head>
+<body>
+    <h1>Spacy Demo Page</h1>
+    <form method="post" action="{{ url_for('operation_result') }}" id="calculator_form">
+        <label for="Input1">Input:</label>
+        <textarea type="text" name="Input1" id="Input1" cols="100" rows="10"></textarea>
+        <br/>
+        <input type="submit" value="Submit" style="width: 100px; height: 50px;"/>
+    </form>
+    {% if calculation_success == True %}
+        <br/>
+        <p>{{input1}}</p>
+        {{result}}
+    {% endif %}
+    {% if calculation_success == False %}
+        <br/>
+        <p>{{error}}</p>
+        <p>{{input1}} {{operation}} {{input2}} = "{{result}}"</p>
+    {% endif %}
+</body>
+</html>

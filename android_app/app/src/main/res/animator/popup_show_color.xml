@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+
+    <objectAnimator
+        android:duration="200"
+        android:propertyName="backgroundColor"
+        android:valueFrom="@android:color/holo_green_light"
+        android:valueTo="@color/colorPopUp"
+        android:valueType="colorType"
+        />
+    <!--<objectAnimator-->
+        <!--android:duration="200"-->
+        <!--android:propertyName="alpha"-->
+        <!--android:valueFrom="0.5"-->
+        <!--android:valueTo="1.0"-->
+        <!--android:valueType="floatType"-->
+        <!--/>-->
+
+    <!--<objectAnimator-->
+        <!--android:duration="200"-->
+        <!--android:propertyName="translationY"-->
+        <!--android:valueFrom="50"-->
+        <!--android:valueTo="0"-->
+        <!--android:valueType="floatType"-->
+        <!--/>-->
+
+
+
+
+</set>
